@@ -5,7 +5,7 @@
     margin: 0;
     padding: 2px 0;
     border: 0;
-    color: black !important;
+    color: inherit;
     font: inherit;
     text-transform: none;
     background-color: transparent;
