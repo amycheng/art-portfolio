@@ -1,10 +1,10 @@
 ---
 templateKey: index-page
-title: Clay Astro
+title: Amy Cheng
 image: /img/clay-images-7.jpg
-description: A stunning Astro theme designed for captivating image-centric websites, perfect for photographers, portfolios, and blogs.
+description: Amy Cheng draws and paints.
 thumbnail: /img/clay-images-7.jpg
 heading: Main Heading
-subheading: Sub HEading
+subheading: Sub Heading
 featuredimage: /img/clay-images-7.jpg
 ---
