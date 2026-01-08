@@ -1,9 +1,9 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { type CollectionEntry } from 'astro:content';
+import Layout from "../layouts/Layout.astro";
+import { type CollectionEntry } from "astro:content";
 
 interface Props {
-  entry: CollectionEntry<'pages'>;
+    entry: CollectionEntry<"pages">;
 }
 
 const { entry } = Astro.props;
@@ -17,8 +17,9 @@ const { title, description, thumbnail } = entry.data;
 ---
 
 <Layout title={title} description={description}>
-  <article class={`post-content ${thumbnail ? '' : 'no-image'}`}>
-    {/* Title and description hidden
+    <article class={`post-content ${thumbnail ? "" : "no-image"}`}>
+        {
+            /* Title and description hidden
     <header class="post-content-header">
       <h1 class="post-content-title">{title}</h1>
     </header>
@@ -26,19 +27,21 @@ const { title, description, thumbnail } = entry.data;
     {description && (
       <p class="post-content-excerpt">{description}</p>
     )}
-    */}
+    */
+        }
 
-    {thumbnail && (
-      <div class="post-content-image">
-        <img src={thumbnail} class="kg-image" alt={title} />
-      </div>
-    )}
+        {
+            thumbnail && (
+                <div class="post-content-image">
+                    <img src={thumbnail} class="kg-image" alt={title} />
+                </div>
+            )
+        }
 
-    <div class="post-content-body">
-      <Content />
-    </div>
+        <div class="post-content-body">
+            <Content />
+        </div>
 
-    <footer class="post-content-footer">
-    </footer>
-  </article>
+        <footer class="post-content-footer"></footer>
+    </article>
 </Layout>
